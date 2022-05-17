@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/6dba53c399.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;500&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>ohmyfood</title>
 </head>
@@ -25,42 +25,45 @@
             <div>
                 <h1 class="intro-title">Book the menu you like</h1>
                 <p class="intro-info">Discover top-of-the-art restaurants we <br> picked for you</p>
-                <button class="explore-btn">Explore our restaurants</button>
+                <button class="pink-btn">Explore our restaurants</button>
             </div>
         </section>
         <nav>
             <div>
             <h1 class="how-title">How it works</h1>
             <ul>
-                <li class="how-btn"><i class="fa-solid fa-mobile-screen-button"></i>Choose a restaurant</li>
-                <li class="how-btn"><i class="fa-solid fa-list"></i>Create your menu</li>
-                <li class="how-btn store-btn"><i class="fa-solid fa-store"></i>Go enjoy it at the restaurant</li>
+                <li class="how-btn"><i class="fa-solid fa-1"></i><i class="how-icons fa-solid fa-mobile-screen-button"></i><span class="how-text">Choose a restaurant</span></li>
+                <li class="how-btn"><i class="fa-solid fa-2"></i><i class="how-icons fa-solid fa-list"></i><span class="how-text">Create your menu</span></li>
+                <li class="how-btn"><i class="fa-solid fa-3"></i><i class="how-icons fa-solid fa-store"></i><span class="how-text">Go enjoy it at the restaurant</span></li>
             </ul>
             </div>
         </nav>
         <main class="restaurants cards">
-            <h3 class="title">Restaurants</h3>
+            <div class="title">Restaurants</div>
             <div class="columns">
                 <div class="card">
                     <a class="links" href="/thefullpalette.html" target="_blank">
                     <img class="images radius" src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" width="275" height="150" alt="">
                         <div class="text">
-                            <i class="fa-regular fa-heart"></i>
                             <div>
                                 <strong>The Full Palette</strong> 
                             </div>
-                            
                             <div>
                                 New York
                             </div>
                         </div>
                     </a>
+                    <div class="like-button">
+                        <input type="checkbox" id="liked">
+                        <label for="liked">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                    </div>
                 </div>
                 <div class="card">
                     <a class="links" href="/theenchantedplate.html" target="_blank">
                     <img class="images radius" src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" width="275" height="150" alt="">
                         <div class="text">
-                            <i class="fa-regular fa-heart"></i>
                             <div>
                                 <strong>The Enchanted Plate</strong> 
                             </div>
@@ -69,12 +72,17 @@
                             </div>
                         </div>
                     </a>
+                    <div class="like-button">
+                        <input type="checkbox" id="liked">
+                        <label for="liked">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                    </div>
                 </div>
                 <div class="card">
                     <a class="links" href="/bastille.html" target="_blank">
                     <img class="images radius" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" width="275" height="150" alt="">
                         <div class="text"> 
-                            <i class="fa-regular fa-heart"></i>
                             <div>
                                 <strong>Bastille</strong>
                             </div>
@@ -84,14 +92,19 @@
                             </div>
                         </div>
                     </a>
+                    <div class="like-button">
+                        <input type="checkbox" id="liked">
+                        <label for="liked">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                    </div>
                 </div>
                 <div class="card">
                     <a class="links" href="/legourmand.html" target="_blank">
                     <img class="images radius" src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" width="275" height="150" alt="">
                         <div class="text">
-                            <i class="fa-regular fa-heart"></i>
                             <div>
-                                <strong>Gourmand</strong> 
+                                <strong>Le Gourmand</strong> 
                             </div>
                             
                              <div>
@@ -99,6 +112,12 @@
                             </div>
                         </div>
                     </a>
+                    <div class="like-button">
+                        <input type="checkbox" id="liked">
+                        <label for="liked">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                    </div>
                 </div>
             </div>
         </main>

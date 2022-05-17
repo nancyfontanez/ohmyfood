@@ -3,94 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA__compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/6dba53c399.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>Bastille</title>
 </head>
 <body> 
-    <header>
-        <a href="/index.html" target="_blank">
-            <img src="/images/logo/ohmyfood.png" alt="">
-        </a>
+    <div class="container">
+    <header class="header">
+        <div>
+            <a class="links" href="/index.html" target="_blank">
+                <i class="fa-solid fa-arrow-left"></i>
+                <img class="header__logo" src="/images/logo/ohmyfood.png" alt="">
+            </a>
+        </div> 
     </header>
     <section>
-        <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" width="200" height="200" alt="">
+        <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" width="360" height="300" alt="">
     </section>
-    <main>
-        Bastille
-        <br>
+    <main class="restaurant__cards">
+        <div class="restaurant__name">Bastille</div>
+        <div class="like-button">
+                <input type="checkbox" id="liked">
+                <label class="like" for="liked">
+                    <i class="fa-regular fa-heart"></i>
+                </label>
+        </div>
+        <div class="restaurant__columns">
+        <nav>
+            <div class="menu__categories"> 
         ENTREES
-        <nav>
-            <ul>
-                <li>
-                    Citrus Squid Carpaccion
-                    <br>
-                    With orange zest 25€
-                </li>
-                <li>
-                    Grandmother's Vegetable Soup
-                    <br>
-                    Carrots, parsnips, Jerusalem artichoke 35€
-                </li>
-                <li>
-                    Onion Soup
-                    <br>
-                    Revisted 20€ 
-                </li>
+        <hr color="99e2d0"  width="10%" />
+        </div> 
+            <ul class="menu">
+                <div class="overlay-container">
+                    <div class="food-card">
+                    <div class="menu__food-name"><strong>Citrus Squid Carpaccio</strong></div>
+                    <div class="menu__food-description">With orange zest <strong>25€</strong></span></div>
+                 <div class="overlay">
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="overlay-container">
+                    <div class="food-card">
+                    <div class="menu__food-name"><strong>Grandmother's Vegetable Soup</strong></div>
+                    <div class="menu__food-description">Carrots, parsnips, Jerusalem artichoke <strong>35€</strong></div>
+                    <div class="overlay">
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="overlay-container">
+                    <div class="food-card">
+                    <div class="menu__food-name"><strong>Onion Soup</strong></div>
+                    <div class="menu__food-description">Revisted<strong> 20€</strong></span></div>
+                <div class="overlay">
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                      </div>
+                    </div>
+                </div>
             </ul>
-        MAIN DISH
-        <nav>
-            <ul>
-                <li>
-                    Scallops
-                    <br>
-                    With mashed parsnip 40€
-                </li>
-                <li>
-                    Magret de canard
-                    <br>
-                    With mashed potatoes 35€
-                </li>
-                <li>
-                    Game Hen
-                    <br>
-                    With vegetable gnocchis 44€
-                </li>
+            </nav>
+            <nav>
+                <div class="menu__categories"> 
+            MAIN DISH
+            <hr color="99e2d0"  width="10%" />
+            </div>  
+            <ul class="menu">
+                <div class="overlay-container">
+                    <div class="food-card">
+                    <div class="menu__food-name"><strong>Scallops</strong></div>
+                    <div class="menu__food-description">With mashed parsnip<strong>40€</strong></span></div>
+                <div class="overlay">
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="overlay-container">
+                    <div class="food-card">
+                    <div class="menu__food-name"><strong>Magret de canard</strong></div>
+                    <div class="menu__food-description">With black truffle and pureed parsnips<strong>35€</strong></span></div>
+                <div class="overlay">
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="overlay-container">
+                    <div class="food-card">
+                    <div class="menu__food-name"><strong>Filet of Sole</strong></div>
+                    <div class="menu__food-description">With citrus dressing<strong>44€</strong></span></div>
+                <div class="overlay">
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                      </div>
+                    </div>
+                </div>
             </ul>
         </nav>
-        DESSERTS
         <nav>
+            <div class="menu__categories"> 
+            DESSERTS
+            <hr color="99e2d0"  width="10%" />
+            </div>
             <ul>
-                <li>
-                    Floral Ice Cream
-                    <br>
-                    With hazelnut butter 18€
-                </li>
-                <li>
-                    Chocolate Lava Cake
-                    <br>
-                    Revisited 22€
-                </li>
-                <li>
-                    Napoleon
-                    <br>
-                    With blueberries and marzipan 23€
-                </li>
+                <div class="overlay-container">
+                    <div class="food-card">
+                    <div class="menu__food-name"><strong>Floral Ice Cream</strong></div>
+                    <div class="menu__food-description">With hazelnut butter<strong>18€</strong></span></div>
+                <div class="overlay">
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="overlay-container">
+                    <div class="food-card">
+                    <div class="menu__food-name"><strong>Chocolate Lava Cake</strong></div>
+                    <div class="menu__food-description">Revisited<strong>22€</strong></span></div>
+                <div class="overlay">
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="overlay-container">
+                    <div class="food-card">
+                    <div class="menu__food-name"><strong>Napoleon</strong></div>
+                    <div class="menu__food-description">With blueberries and marzipan<strong>23€</strong></span></div>
+                <div class="overlay">
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                      </div>
+                    </div>
+                </div>
             </ul>
         </nav>
-        <button>Order</button>     
+        <button class="pink-btn order-btn">Order</button>
+    </div>    
     </main>
-    <footer>
-        <img src="/images/logo/ohmyfood@2x.svg" alt="">
+    <footer class="footer">
+        <img class="footer__logo" src="/images/logo/ohmyfood@2x.svg" alt=""></svg>
         <nav>
             <ul>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-utensils">Suggest a restaurant</i></a></li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-handshake-angle"></i>Become a parter</a></li>
-                <li><a href="#" target="_blank">Legal</a></li>
-                <li><a href="/contact.html" target="_blank">Contact</a></li>
+                <li><a class="links footer__links" href="#" target="_blank"><i class="fa-solid fa-utensils"></i>Suggest a restaurant</a></li>
+                <li><a class="links footer__links" href="#" target="_blank"><i class="fa-solid fa-handshake-angle"></i>Become a parter</a></li>
+                <li><a class="links footer__links legal" href="#" target="_blank">Legal</a></li>
+                <li><a class="links footer__links contact" href="/contact.html" target="_blank">Contact</a></li>
             </ul>
         </nav>
     </footer>
+    </div>
 </body>

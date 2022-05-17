@@ -10,7 +10,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     margin: auto;
-    width: 350px;
+    width: 360px;
 }
 .header {
     text-align: center;
@@ -44,7 +44,7 @@ body {
     font-size: 15px;
     padding: 0 0 20px 0;
 }
-.explore-btn {
+.pink-btn {
     background-color: #ff79da;
     color: #fff;
     font-weight: 400;
@@ -53,6 +53,7 @@ body {
     padding: 15px 20px 15px 20px;
     margin: 0 0 50px 0;
     box-shadow: -10px -10px 35px #9356dc inset;
+    cursor: pointer;
 }
 ul {
     list-style-type: none;
@@ -75,14 +76,26 @@ ul {
 }
 .fa-mobile-screen-button, .fa-list, .fa-store {
     color: #707070;
-    padding: 6px 20px;
+    padding: 0 16px 0 0;
+    margin: 0 0 0 -10px;
 }
-.fa-store {
-    color: #9356dc;
+.fa-1, .fa-2, .fa-3 {
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+    background-color: #9356dc;
+    padding: 7px 10px 7px 10px;
+    border-radius: 100%;
+    left: -32px;
 }
-.store-btn {
+.how-btn:hover {
     background-color: #f4ecfd;
-    margin: 0 0 60px 0;
+}
+li:hover .how-icons {
+   color:#9356dc; 
+}
+ul:hover .how-text {
+    color: #000;
 }
 .columns {
     display: flex;
@@ -97,7 +110,7 @@ ul {
 }
 .cards {
     background-color: #f2f2f2;
-    width: 350px;
+    width: 360px;
 }
 .card {
     background-color: #fff;
@@ -109,7 +122,7 @@ ul {
 }
 .title {
     font-size: 20px;
-    padding: 25px 0 0 25px;
+    padding: 25px 0 15px 25px;
 }
 .images {
     border-radius: 10px 10px 0 0;
@@ -119,7 +132,7 @@ ul {
     position: relative;
     font-size: 15px;
     line-height: 18px;
-    top: -10px;
+    top: 10px;
     left: 10px;
 }
 .links {
@@ -127,24 +140,33 @@ ul {
     color: #000;
     font-weight: 400px;
 }
-.fa-heart {
+input {
+    display: none;
+}
+label { 
     position: relative;
+    bottom: 20px;
+    left: 260px; 
+}
+@keyframes like {
+    75% {
+        transform: scale(1.25);
+    }
+}
+@keyframes dislike {
+    75% {
+        transform: scale(1.25);
+    }
+}
+label, .fa-regular {
     color: #000;
     font-size: 20px;
-    top: 25px;
-    left: 250px;
+    animation: dislike 0.5s ease 0s;
 }
-.fa-heart:hover {
+input:checked + label .fa-heart {
     color: #ff79da;
-}
-.footer {
-    background-color: #302f2f;
-    width: 100%;
-}
-.footer__logo {
-    padding: 25px 0 0 25px;
-    margin-bottom: -20PX;
-    width: 100px;
+    background-image: url(/images/icons/heart-solid.svg);
+    animation: like 0.5s ease 0s;
 }
 .fa-utensils, .fa-handshake-angle, .legal, .contact {
     color: #fff;
@@ -152,6 +174,120 @@ ul {
 }
 .fa-utensils {
     padding: 0 15px 10px 25px;
+}
+.fa-arrow-left {
+    color: #302f2f;
+    font-size: 20px;
+    position: relative;
+    right: 50px;
+    bottom: 15px;
+}
+.restaurant__cards {
+    background-color: #f2f2f2;
+    border-radius: 40px 40px 0 0;
+    margin-top: -70px;
+    width: 360px;
+}
+.restaurant__columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    margin-bottom: 60px;
+}
+.restaurant__name {
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    padding: 30px 0 0 20px;
+}
+.like {
+    position: relative;
+    bottom: 39px;
+    left: 310px; 
+}
+.like-mods {
+    bottom: 79px;
+}
+.menu__categories {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 28px;
+}
+hr {
+    margin: 0;
+}
+.menu__food-name {
+    font-size: 16px;
+    font-weight: 400;
+}
+.menu__food-description {
+    font-size: 15px;
+    font-weight: 100; 
+}
+.food-card {
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px #cacaca;
+    margin-bottom: 15px;
+    padding: 10px; 
+    width: 310px;
+}
+.overlay-container {
+    position: relative;
+    width: 20%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    margin-left: 265px;
+    background-color: #99e2d0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    transition: .5s ease;
+}
+.food-card:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+.food-card:hover .check {
+    animation: spin 1s linear;  
+}
+.check {
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.order-btn {
+    width: 170px;
+    margin: 0;
+}
+.footer {
+    background-color: #302f2f;
+    width: 360px;
+}
+.footer__logo {
+    padding: 25px 0 0 25px;
+    margin-bottom: -20PX;
+    width: 100px;
 }
 .footer__links {
     font-size: 15px;
