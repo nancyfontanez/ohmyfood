@@ -11,65 +11,60 @@ body {
     align-items: center;
     margin: auto;
     width: 360px;
+     animation: show 8s;
 }
-@media only screen and (max-width: 992px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: auto;
-        width: 992px;
+.wrapper {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ff79da;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle 0.5s alternate infinite ease;
+}
+.circle:nth-child(2) {
+    left: 45%;
+    animation-delay: 0.2s;
+}
+.circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: 0.3s;
+}
+@keyframes circle {
+    0% {
+        top: 60px;
+        height: 5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1);
+    }
+    40% {
+        height: 20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+    100% {
+        top: 0%;
+
     }
 }
-/* .loading-bar-wrapper {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-} 
-#loading-bar-spinner.spinner {
-    left: 50%;
-    margin-left: -20px;
-    top: 50%;
-    margin-top: -20px;
-    position: absolute;
-    z-index: 19;
-    animation: loading-bar-spinner 400ms linear infinite;
-}
-
-#loading-bar-spinner.spinner .spinner-icon {
-    width: 40px;
-    height: 40px;
-    border:  solid 4px transparent;
-    border-top-color:  #99e2d0;
-    border-left-color: #99e2d0;
-    border-radius: 50%;
-    animation: transitionIn 3s linear;
-}
-@keyframes transitionIn {
+@keyframes show {
     from {
-        opacity: 1;
-        transform: rotate(0);
+        opacity: 0;
     }
     to {
-        opacity: 0;   
-        transform: rotateX(-10deg);
+      opacity: 1;
     }
 }
-
-@keyframes loading-bar-spinner {
-    0%   { 
-        transform: rotate(0deg);   
-        transform: rotate(0deg); 
-    }
-    100% { 
-        transform: rotate(360deg); 
-        transform: rotate(360deg); 
-    }
-} */
 .header {
     text-align: center;
     width: 100%;
@@ -274,7 +269,7 @@ input:checked + label .fa-heart {
     line-height: 28px;
 }
 hr {
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 .menu__food-name {
     font-size: 16px;
@@ -323,7 +318,7 @@ hr {
 }
 .food-card:hover .check {
     animation: spin 1s linear;
-    transform-origin: ;  
+    transform-origin: 0;  
 }
 .check {
     color: #fff;
@@ -345,15 +340,15 @@ hr {
     animation: fadeIn;
 }
 .food-card__top {
-    animation: fadeInTop 1000ms ease;
+    animation: fadeInTop 1s ease;
     transform-origin: bottom center;
 }
 .food-card__middle {
-    animation: fadeInMiddle 1100ms ease;
+    animation: fadeInMiddle 2s ease;
     transform-origin: bottom center;
 }
 .food-card__bottom {
-    animation: fadeInBottom 1200ms ease;
+    animation: fadeInBottom 3s ease;
     transform-origin: bottom center;
 }
 @keyframes fadeInTop {
