@@ -340,15 +340,15 @@ hr {
 }
 .food-card__top {
     animation: fadeInTop 1s ease;
-    transform-origin: bottom center;
+    transform-origin: top center;
 }
 .food-card__middle {
     animation: fadeInMiddle 2s ease;
-    transform-origin: bottom center;
+    transform-origin: top center;
 }
 .food-card__bottom {
     animation: fadeInBottom 3s ease;
-    transform-origin: bottom center;
+    transform-origin: top center;
 }
 @keyframes fadeInTop {
     0% {
