@@ -3,57 +3,42 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color: #000;
+    margin: 0;
 }
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin: auto;
+    margin: 0;
     width: 360px;
     animation: show 8s;
+
 }
-.wrapper {
-    width: 200px;
-    height: 60px;
+.loader {
     position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    animation: rotate 3s;
 }
-.circle {
-    width: 20px;
-    height: 20px;
-    position: absolute;
+@keyframes rotate {
+    from { 
+    transform: rotate(0deg);
+    opacity: 1;
+    border: 16px solid #f3f3f3;
     border-radius: 50%;
-    background-color: #ff79da;
-    left: 15%;
-    transform-origin: 50%;
-    animation: circle 0.5s alternate infinite ease;
-}
-.circle:nth-child(2) {
-    left: 45%;
-    animation-delay: 0.2s;
-}
-.circle:nth-child(3) {
-    left: auto;
-    right: 15%;
-    animation-delay: 0.3s;
-}
-@keyframes circle {
-    0% {
-        top: 60px;
-        height: 5px;
-        border-radius: 50px 50px 25px 25px;
-        transform: scaleX(1);
+    border-top: 16px solid #ff79da;
+    width: 120px;
+    height: 120px;
     }
-    40% {
-        height: 20px;
-        border-radius: 50%;
-        transform: scaleX(1);
-    }
-    100% {
-        top: 0%;
+    to { 
+    transform: rotate(360deg); 
+    opacity: 0;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #ff79da;
+    width: 120px;
+    height: 120px;
     }
 }
 @keyframes show {
