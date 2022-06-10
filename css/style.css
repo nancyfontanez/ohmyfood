@@ -20,7 +20,7 @@ body {
     right:0;
     top:0;
     bottom:0;
-    position:fixed;
+    position: fixed;
     animation: rotate 3s;
 }
 @keyframes rotate {
