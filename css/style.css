@@ -15,12 +15,12 @@ body {
 
 }
 .loader {
-    margin:auto;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
     position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     animation: rotate 3s;
 }
 @keyframes rotate {
