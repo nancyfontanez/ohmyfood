@@ -21,4 +21,5 @@ $ cd ../path/to/the/file
 $ npm install
 $ npm start
 ## Published Deploy
-Permalink: https://62a3ee5e6a135c00088131e0--melodic-salamander-42438f.netlify.app/
+***
+Permalink: https://master--melodic-salamander-42438f.netlify.app/
