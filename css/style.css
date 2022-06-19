@@ -12,7 +12,6 @@ body {
     margin: auto;
     width: 360px;
     animation: show 8s;
-
 }
  @media only screen and (min-width: 768px) {
     .container {   
@@ -23,7 +22,7 @@ body {
         justify-content: center;
         width: 100%;
     }
-    header {
+    .top {
         order: 1;
     }
     .location {
@@ -48,7 +47,7 @@ body {
         text-align: center;
         padding: 0 0 50px 0;
     }
-    #how-list {
+    #how-list-1, #how-list-2, #how-list-3  {
         font-size: 16px;
         font-weight: 600;
         border: 0;
@@ -56,7 +55,7 @@ body {
         box-shadow: 0 0 0 #fff; 
         padding: 50px;
     } 
-    #how-list:hover {
+    #how-list-1:hover, #how-list-2:hover, #how-list-3:hover {
         background-color: #fff;
     }
     #number-1, #number-2, #number-3 {
@@ -110,29 +109,151 @@ body {
     #images-1, #images-2, #images-3, #images-4 {
         height: 300px;
     }
-    #card-web {
+    #card-web-1, #card-web-2, #card-web-3, #card-web-4 {
         margin: 60px 0 0 0;
         width: 310px;
         height: 360px;
+    }
+    #images__menu-web, #images__menu-web-1, #images__menu-web-2, #images__menu-web-3 { 
+        order: 2;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+    #images__menu-web {
+        background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    }
+    #images__menu-web-1 {
+        background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    }
+    #images__menu-web-2 {
+        background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    }
+    #images__menu-web-3 {
+        background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    }
+    #images__menu-hidden {
+        visibility: hidden;
+    }
+    #restaurant__cards-web {
+        order: 3;
+        border-radius: 0;
+        width: 100%;
+    }
+    #restaurant__name-web {
+        text-align: center;
+        margin: 0 0 0 -60px;
+        width: 100%;
+    }
+    #green-box-1, #green-box-2 {
+        top: -285px;
+    }
+    .heart-align {
+        margin: 0 auto;
+        width: 18%;
+        position: relative;
+    }
+    #menu-web {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 100px 0 0 ;
+    }
+    #food-card-web-1, #food-card-web-2, #food-card-web-3, #food-card-web-4, #food-card-web-5, #food-card-web-6, #food-card-web-7, #food-card-web-8, #food-card-web-9, #food-card-web-10 {
+        position: relative;
+        height: 50px;
+        border: 0;
+        padding: 40px 10px 40px 10px;
+    }
+    #food-card-web-2, #food-card-web-5, #food-card-web-8 {
+        left: 50px; 
+    }
+    #food-card-web-3, #food-card-web-6, #food-card-web-9 {
+        right: -100px;
+    }
+    #food-card-web-10 {
+        right: -150px;
+    }
+    #check-web {
+        top: 41%;
     }
     #bottom {
         order: 6;
         width: 100%;
     }
 } 
-@media only screen and (min-width: 1618px) {
+@media only screen and (min-width: 1607px) {
     .how {
         margin: 0 0 80px 0;
     }
-    #how-list {
+    #how-list-1, #how-list-2, #how-list-3  {
         display: inline;
     }
     #restaurants {
         width: 80%
     }
-
+    .heart-align {
+        margin: 0 auto;
+        width: 18%;
+        position: relative;
+    }
 }
-
+@media only screen and (max-width: 1606px) and (min-width: 1273px) {
+    #restaurants {
+        width: 50%
+    } 
+    .heart-align {
+        margin: 0 auto;
+        width: 28%;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 1272px) and (min-width: 860px) {
+    #restaurants {
+        width: 75%
+    }
+    #menu-web {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+    #food-card-web-1, #food-card-web-2, #food-card-web-3, #food-card-web-4, #food-card-web-5, #food-card-web-6, #food-card-web-7, #food-card-web-8, #food-card-web-9, #food-card-web-10 {
+        left: 0;
+        right: 0;
+    }
+    .heart-align {
+        margin: 0 auto;
+        width: 38%;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 859px) and (min-width: 769px) {
+    #restaurants {
+        width: 100%
+    }
+    #menu-web {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+    #food-card-web-1, #food-card-web-2, #food-card-web-3, #food-card-web-4, #food-card-web-5, #food-card-web-6, #food-card-web-7, #food-card-web-8, #food-card-web-9, #food-card-web-10  {
+        left: 0;
+        right: 0;
+    }
+    .heart-align {
+        margin: 0 auto;
+        width: 48%;
+        position: relative;
+    }
+}
 .loader {
     position: fixed;
     margin: auto;
@@ -170,7 +291,7 @@ body {
       opacity: 1;
     }
 }
-.header {
+.top {
     text-align: center;
     width: 100%;
 }
@@ -269,6 +390,21 @@ ul:hover .how-text {
     background-color: #f2f2f2;
     width: 360px;
 }
+.new-box {
+    position: relative;
+    top: -135px;
+    left: 73%;
+    background-color: #99E2D0;
+    padding: 6px 24px;
+    color: #1f8d71;
+    font-size: 12.5px;
+    font-weight: 400;
+    border-radius: 2px;
+    letter-spacing: .3px;
+}
+.text-align {
+    margin: -15px 0 0 0;
+}
 .card {
     background-color: #fff;
     font-size: 11px;
@@ -296,22 +432,34 @@ ul:hover .how-text {
 .links {
     text-decoration: none;
     color: #000;
-    font-weight: 400px;
 }
-.fa-heart {
-    color: #000;
-    font-size: 20px;
+.empty-heart, .full-heart {
     position: relative;
+    font-size: 20px;
     left: 265px;
     bottom: 20px;
 }
-.fa-heart:hover {
-    color:#ff79da;
-    background-image: url(/images/icons/heart-solid.svg);
+.empty-heart {
+    color: #000;
 }
-#heart {
+.full-heart {
+    left: 242.3px;
+    color: transparent;
+}
+.full-heart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC 0%, #FF79DA 100%);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#heart-1 {
     left: 315px;
-    bottom: 35px;;
+    bottom: 35px;
+}
+#heart-2 {
+    left: 289.2px;
+    bottom: 35px;
 }
 .fa-utensils, .fa-handshake-angle, .legal, .contact {
     color: #fff;
@@ -369,13 +517,15 @@ hr {
 }
 .menu__food-description {
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 100;  
+}
+.menu__food-description:hover {
     text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
 }
-.menu__spacing {
-   position: absolute;
-   left: 290px;
+.menu__pricing {
+   float: right;
 }
 .food-card {
     background-color: #fff;
@@ -387,6 +537,13 @@ hr {
     padding: 10px; 
     width: 310px;
     animation: fadeIn 1000ms;
+}
+.food-card:hover {
+    width: 250px;
+    height: 50px;
+    border-radius: 20px 0 0 20px;
+    text-overflow: ellipsis;
+    transition: .5s ease;
 }
 .overlay-container {
     position: relative;
@@ -403,6 +560,7 @@ hr {
     width: 0;
     height: 100%;
     border-radius: 0 20px 20px 0;
+    overflow: hidden;
     transition: .5s ease;
 }
 .food-card:hover .overlay {
