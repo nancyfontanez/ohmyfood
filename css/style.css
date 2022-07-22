@@ -452,6 +452,7 @@ ul:hover .how-text {
     font-size: 22px;
     font-weight: 100;
     line-height: 28px;
+    margin: 0 0 0 20px;
 }
 hr {
     color: #99e2d0;  
