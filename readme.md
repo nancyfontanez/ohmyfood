@@ -22,4 +22,4 @@ $ npm install
 $ npm start
 ## Published Deploy
 ***
-Permalink: https://master--melodic-salamander-42438f.netlify.app/
+Permalink: https://nfontanez1622.github.io/ohmyfood/
