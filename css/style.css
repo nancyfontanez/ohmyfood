@@ -455,21 +455,14 @@ ul:hover .how-text {
     padding: 0 0 0 20px;
 }
 hr {
-<<<<<<< HEAD
     width: 55px;
-=======
-    width: 10%;
->>>>>>> 4cee766f17ebb64da85d6f3687ef899f1190b347
     margin-inline-start: inherit;
     border-top: 2px solid #99E2D0;
     border-left: none;
 }
-<<<<<<< HEAD
 .menuContainer {
     background-color: #f2f2f2;
 }
-=======
->>>>>>> 4cee766f17ebb64da85d6f3687ef899f1190b347
 .menuItem {
     background-color: #fff;
     padding: 1rem;
