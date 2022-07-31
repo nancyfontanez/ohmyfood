@@ -1,5 +1,5 @@
 body {
-    background: #fff;
+    background: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color: #000;
@@ -52,11 +52,11 @@ body {
         font-weight: 600;
         border: 0;
         border-radius: 0;
-        box-shadow: 0 0 0 #fff; 
+        box-shadow: 0 0 0 #ffffff; 
         padding: 50px;
     } 
     #howList-1:hover, #howList-2:hover, #howList-3:hover {
-        background-color: #fff;
+        background-color: #ffffff;
     }
     #number-1, #number-2, #number-3 {
         font-size: 25px;
@@ -100,7 +100,7 @@ body {
     }
     #restaurants {
         order: 4;
-        background-color: #fff; 
+        background-color: #ffffff; 
         width: 60%;
     }
     #restaurantsTitle {
@@ -292,7 +292,7 @@ body {
 }
 .pinkButton {
     background-color: #ff79da;
-    color: #fff;
+    color: #ffffff;
     font-weight: 400;
     border: 0px;
     border-radius: 100px;
@@ -327,7 +327,6 @@ ul {
 .fa-1, .fa-2, .fa-3 {
     position: relative;
     font-size: 12px;
-    color: #fff;
     background-color: #9356dc;
     padding: 7px 10px 7px 10px;
     border-radius: 100%;
@@ -355,7 +354,7 @@ ul:hover .how-text {
     width: 360px;
 }
 .card {
-    background-color: #fff;
+    background-color: #ffffff;
     font-size: 11px;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #cacaca; 
@@ -426,7 +425,7 @@ ul:hover .how-text {
     bottom: 35px;
 }
 .fa-utensils, .fa-handshake-angle, .legal, .contact {
-    color: #fff;
+    color: #ffffff;
     padding: 0 10px 10px 25px;
 }
 .fa-utensils {
@@ -474,7 +473,7 @@ hr {
     background-color: #f2f2f2;
 }
 .menuItem {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -652,5 +651,5 @@ footer {
 }
 .footerLinks {
     font-size: 15px;
-    color: #fff;
+    color: #ffffff;
 }
