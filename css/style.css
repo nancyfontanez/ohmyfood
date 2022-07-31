@@ -481,8 +481,8 @@ hr {
     display: flex;
     border-radius: 16px;
     margin: 16px auto;
-    -webkit-box-shadow: 4px 4px 16px #000001;
-            box-shadow: 4px 4px 16px #000001;
+    -webkit-box-shadow: 4px 4px 16px #cacaca;
+            box-shadow: 4px 4px 16px #cacaca;
     overflow: hidden;
     cursor: pointer;
     width: 300px;
