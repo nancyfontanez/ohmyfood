@@ -31,10 +31,10 @@ body {
     .intro {
         order: 3;
     }
-    #intro-web {
+    #introWeb {
         font-size: 64px;
     }
-    #intro-info-web {
+    #introInfoWeb {
         font-size: 32px;
         margin: -50px 0 10px 0;
     }
@@ -42,12 +42,12 @@ body {
         order: 5;
         padding: 0 0 30px 0;
     }
-    #how-title-web{
+    #howTitleWeb{
         font-size: 64px;
         text-align: center;
         padding: 0 0 50px 0;
     }
-    #how-list-1, #how-list-2, #how-list-3  {
+    #howList-1, #howList-2, #howList-3  {
         font-size: 16px;
         font-weight: 600;
         border: 0;
@@ -55,7 +55,7 @@ body {
         box-shadow: 0 0 0 #fff; 
         padding: 50px;
     } 
-    #how-list-1:hover, #how-list-2:hover, #how-list-3:hover {
+    #howList-1:hover, #howList-2:hover, #howList-3:hover {
         background-color: #fff;
     }
     #number-1, #number-2, #number-3 {
@@ -72,17 +72,17 @@ body {
     #number-3{
         left: 10px;
     }
-    .how-text {
+    .howText {
         font-size: 30px;
     }
-    #how-line-1, #how-line-2, #how-line-3 {
+    #howLine-1, #howLine-2, #howLine-3 {
         position: relative;
         top: 30px;
     }
-    #how-line-2 {
+    #howLine-2 {
         left: -10px;
     }
-    #how-line-3 {
+    #howLine-3 {
         left: -70px;
     }
     .fa-store, .fa-list, .fa-mobile-screen-button {
@@ -94,7 +94,7 @@ body {
     .fa-mobile-screen-button {
         left: 185px;
     }
-    .pink-btn {
+    .pinkButton {
         font-size: 20px;
         width: 300px;
     }
@@ -103,52 +103,52 @@ body {
         background-color: #fff; 
         width: 60%;
     }
-    #restaurants-title {
+    #restaurantsTitle {
         display: none;
     }
     #images-1, #images-2, #images-3, #images-4 {
         height: 300px;
     }
-    #card-web-1, #card-web-2, #card-web-3, #card-web-4 {
+    #cardWeb-1, #cardWeb-2, #cardWeb-3, #cardWeb-4 {
         margin: 60px 0 0 0;
         width: 310px;
         height: 360px;
     }
-    #images__menu-web, #images__menu-web-1, #images__menu-web-2, #images__menu-web-3 { 
+    #imagesMenuWeb, #imagesMenuWeb-1, #imagesMenuWeb-2, #imagesMenuWeb-3 { 
         order: 2;
         background-size: cover;
         background-position: center;
         width: 100%;
     }
-    #images__menu-web {
+    #imagesMenuWeb {
         background-image: url(/ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     }
-    #images__menu-web-1 {
+    #imagesMenuWeb-1 {
         background-image: url(/ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
     }
-    #images__menu-web-2 {
+    #imagesMenuWeb-2 {
         background-image: url(/ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     }
-    #images__menu-web-3 {
+    #imagesMenuWeb-3 {
         background-image: url(/ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     }
-    #images__menu-hidden {
+    #imagesMenuHidden {
         visibility: hidden;
     }
-    #restaurant__cards-web {
+    #restaurantCardsWeb {
         order: 3;
         border-radius: 0;
         width: 100%;
     }
-    #restaurant__name-web {
+    #restaurantNameWeb {
         text-align: center;
         margin: 0 0 0 -60px;
         width: 100%;
     }
-    #green-box-1, #green-box-2 {
+    #greenBox-1, #greenBox-2 {
         top: -285px;
     }
-    .heart-align {
+    .heartAlign {
         margin: 0 auto;
         width: 18%;
         position: relative;
@@ -168,13 +168,13 @@ body {
     .how {
         margin: 0 0 80px 0;
     }
-    #how-list-1, #how-list-2, #how-list-3  {
+    #howList-1, #howList-2, #howList-3  {
         display: inline;
     }
     #restaurants {
         width: 80%
     }
-    .heart-align {
+    .heartAlign {
         margin: 0 auto;
         width: 18%;
         position: relative;
@@ -184,7 +184,7 @@ body {
     #restaurants {
         width: 50%
     } 
-    .heart-align {
+    .heartAlign {
         margin: 0 auto;
         width: 28%;
         position: relative;
@@ -194,7 +194,7 @@ body {
     #restaurants {
         width: 75%
     }
-    .heart-align {
+    .heartAlign {
         margin: 0 auto;
         width: 38%;
         position: relative;
@@ -209,7 +209,7 @@ body {
     #restaurants {
         width: 100%
     }
-    .heart-align {
+    .heartAlign {
         margin: 0 auto;
         width: 48%;
         position: relative;
@@ -262,7 +262,7 @@ body {
     text-align: center;
     width: 100%;
 }
-.header__logo {
+.headerLogo {
     margin: 10px;
     width: 175px;
 }
@@ -282,15 +282,15 @@ body {
     width: 100%;
     
 }
-.intro-title {
+.introTitle {
     font-size: 20px;
     padding: 20px 0 20px 0;
 }
-.intro-info {
+.introInfo {
     font-size: 15px;
     padding: 0 0 20px 0;
 }
-.pink-btn {
+.pinkButton {
     background-color: #ff79da;
     color: #fff;
     font-weight: 400;
@@ -304,11 +304,11 @@ ul {
     list-style-type: none;
     padding-inline-start: 0;
 }
-.how-title {
+.howTitle {
     font-size: 25px;
     padding: 20px 0 20px 0;
 }
-.how-btn {
+.howButton {
     color: #000;
     font-size: 15px;
     font-weight: 600;
@@ -333,7 +333,7 @@ ul {
     border-radius: 100%;
     left: -32px;
 }
-.how-btn:hover {
+.howButton:hover {
     background-color: #f4ecfd;
 }
 li:hover .how-icons {
@@ -362,7 +362,7 @@ ul:hover .how-text {
     width: 85%;
     height: 210px;
 }
-.new-box {
+.newBox {
     position: relative;
     top: -135px;
     left: 73%;
@@ -374,7 +374,7 @@ ul:hover .how-text {
     border-radius: 2px;
     letter-spacing: .3px;
 }
-.text-align {
+.textAlign {
     margin: -15px 0 0 0;
 }
 .title {
@@ -382,7 +382,7 @@ ul:hover .how-text {
     padding: 25px 0 15px 25px;
 }
 
-.images-radius {
+.imagesRadius {
     border-radius: 10px 10px 0 0;
     width: 100%;
 }
@@ -397,20 +397,20 @@ ul:hover .how-text {
     text-decoration: none;
     color: #000;
 }
-.empty-heart, .full-heart {
+.emptyHeart, .fullHeart {
     position: relative;
     font-size: 20px;
     left: 265px;
     bottom: 20px;
 }
-.empty-heart {
+.emptyHeart {
     color: #000;
 }
-.full-heart {
+.fullHeart {
     left: 242.3px;
     color: transparent;
 }
-.full-heart:hover {
+.fullHeart:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
     background: linear-gradient(#9356DC 0%, #FF79DA 100%);
     background-clip: inherit;
@@ -439,13 +439,13 @@ ul:hover .how-text {
     right: 50px;
     bottom: 15px;
 }
-.restaurant__cards {
+.restaurantCards {
     background-color: #f2f2f2;
     border-radius: 40px 40px 0 0;
     margin-top: -70px;
     width: 360px;
 }
-.restaurant__name {
+.restaurantName {
     font-family: 'Shrikhand';
     font-size: 30px;
     padding: 30px 0 0 20px;
@@ -455,7 +455,7 @@ ul:hover .how-text {
     bottom: 39px;
     left: 310px; 
 }
-.like-mods {
+.likeMods {
     bottom: 79px;
 }
 .menuCategories {
@@ -475,67 +475,67 @@ hr {
 }
 .menuItem {
     background-color: #fff;
-    padding: 1rem;
+    padding: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border-radius: 16px;
-    margin: 1rem auto;
-    -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-            box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 16px auto;
+    -webkit-box-shadow: 4px 4px 16px #000001;
+            box-shadow: 4px 4px 16px #000001;
     overflow: hidden;
     cursor: pointer;
     width: 300px;
     height: 56px;
   }
-  .menuItem__header {
+  .menuItemHeader {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
   }
-  .menuItem__title {
+  .menuItemTitle {
     font-size: 17px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: 0;
   }
-  .menuItem__description {
+  .menuItemDescription {
     font-size: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.menuItem__price {
+.menuItemPrice {
     font-size: 16px;
     font-weight: 600;
 }
-.menuItem__priceModification {
+.menuItemPriceModification {
     margin: 0 0 0 -21px;
 }
-.menuItem:hover .menuItem__icon {
+.menuItem:hover .menuItemIcon {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition-duration: .9s;
           transition-duration: .9s;
 }
 
-.menuItem:hover > .menuItem__confirmation {
-  -webkit-transform: translateX(-5rem);
-          transform: translateX(-5rem);
+.menuItem:hover > .menuItemConfirmation {
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
   -webkit-transition: .7s ease-in-out;
   transition: .7s ease-in-out;
 }
 
-.menuItem:hover > .menuItem__price {
-  -webkit-transform: translateX(-5rem);
-          transform: translateX(-5rem);
+.menuItem:hover > .menuItemPrice {
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
   -webkit-transition: .7s ease-in-out;
   transition: .7s ease-in-out;
 }
 
-.menuItem:hover .menuItem__description, .menuItem:hover .menuItem__title {
+.menuItem:hover .menuItemDescription, .menuItem:hover .menuItemTitle {
   width: 75%;
   -webkit-animation: progwidth .7s linear;
           animation: progwidth .7s linear;
@@ -602,7 +602,7 @@ hr {
           animation-fill-mode: backwards;
 }
 
-.menuItem__icon {
+.menuItemIcon {
   color: #99e2d0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -610,8 +610,8 @@ hr {
   background-color: white;
   font-size: 16px;
   border-radius: 50%;
-  height: 1.9em;
-  width: 1.9em;
+  height: 30.4px;
+  width: 30.4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -620,10 +620,10 @@ hr {
           justify-content: center;
 }
 
-.menuItem__confirmation {
+.menuItemConfirmation {
   background-color: #99e2d0;
-  margin: -1rem -6rem -1rem 1rem;
-  width: 5rem;
+  margin: -16px -96px -16px 16px;
+  width: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,19 +638,19 @@ hr {
     text-align: center;
     width: 100%;
 }
-.order-btn {
+.orderButton {
     width: 170px;
 }
 footer {
     background-color: #302f2f;
     width: 360px;
 }
-.footer__logo {
+.footerLogo {
     padding: 25px 0 0 25px;
     margin-bottom: -20PX;
     width: 100px;
 }
-.footer__links {
+.footerLinks {
     font-size: 15px;
     color: #fff;
 }
