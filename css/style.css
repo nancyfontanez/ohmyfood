@@ -336,10 +336,10 @@ ul {
 .howButton:hover {
     background-color: #f4ecfd;
 }
-li:hover .how-icons {
+li:hover .howIcons {
    color:#9356dc; 
 }
-ul:hover .how-text {
+ul:hover .howText {
     color: #000;
 }
 .columns {
